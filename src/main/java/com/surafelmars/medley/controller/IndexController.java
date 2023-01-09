@@ -2,6 +2,7 @@ package com.surafelmars.medley.controller;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.logging.Logger;
+
 
 @Controller
 public class IndexController {
@@ -47,7 +49,25 @@ public class IndexController {
 //        return new ModelAndView("redirect:/index");
 //    }
 
-
+//@PostMapping("/saveMsg")
+//    public String handleFormSubmission(@RequestParam("name") String name, @RequestParam("email") String email,
+//                                   @RequestParam("subject") String subject, @RequestParam("phone") String phone,
+//                                  @RequestParam("date") LocalDate date, @RequestParam("time") LocalTime time,
+//                                 @RequestParam("timeFrame") String timeFrame, @RequestParam("party") String party,
+//                                 @RequestParam("message") String message) {
+//
+//    log.info("Name : " + name);
+//    log.info("email : " + email);
+//    log.info("subject: " + subject);
+//    log.info("phone : " + phone);
+//    log.info("Date : " + date);
+//    log.info("Time : " + time);
+//    log.info("Time Frame : " + timeFrame);
+//    log.info("party : " + party);
+//    log.info("Message : " + message);
+//
+//        return "redirect:/index";
+//    }
 
 
 }
